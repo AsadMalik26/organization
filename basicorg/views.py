@@ -1,9 +1,14 @@
 from django.shortcuts import render
 from rest_framework import viewsets, generics
 
-from basicorg.models import Employee, Department, Skill, Team, Project
+# from basicorg.models import Employee, Department, Skill, Team, Project
 from basicorg.serializers import EmployeeSerializer, DepartmentSerializer, SkillSerializer, TeamSerializer, \
     ProjectSerializer
+from department.models import Department
+from employee.models import Employee
+from project.models import Project
+from skill.models import Skill
+from team.models import Team
 
 
 # Create your views here.

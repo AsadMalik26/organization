@@ -1,6 +1,10 @@
 from rest_framework import serializers
 
-from basicorg.models import Employee, Team, Department, Skill, Project
+from department.models import Department
+from employee.models import Employee
+from project.models import Project
+from skill.models import Skill
+from team.models import Team
 
 
 class DepartmentSerializer(serializers.ModelSerializer):
