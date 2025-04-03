@@ -21,5 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', include(router.urls)),
     path('drf/', include('basicorg.urls')),
+    path('department/', include('department.urls')),
+    path('skill/', include('skill.urls')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
