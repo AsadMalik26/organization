@@ -31,7 +31,7 @@ class SkillsAPIView(APIView):
         serializer.is_valid(raise_exception=True)
         skill = Skill.objects.get(id=request.data.get('id'))
         serializer.update(skill, serializer.validated_data)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(SkillSerializer(skill).data, status=status.HTTP_200_OK)
 
     def delete(self, request, format=None):
         skill = Skill.objects.get(id=request.query_params.get('id'))
