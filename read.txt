@@ -1,0 +1,26 @@
+python -m venv venv -> create virtual environment
+source venv/bin/activate -> to activate the env
+pip install django
+django-admin --version
+django-admin startproject <project name> <optional parameter: e.g: . (dot) to create subfolder based on parent(project name)>
+
+manage.py: provide command list, you can also create custom command, you can modify the modals and more things
+
+python manage.py -> to view all the commands
+
+python manage.py runserver -> to run the server/project
+
+python manage.py migrate
+
+python manage.py createsuperuser -> to create first/initial user
+
+ python manage.py startapp <app name e.g. customer> -> to create a new app in the project
+
+ python manage.py makemigrations -> to create migration file for model(s) of our app
+
+then we have to migrate it,
+python manage.py migrate
+
+pip install djangorestframework -> to install drf
+
+python manage.py collectstatic -> to load static files, important for product as product has build which needs static resources to be loaded
